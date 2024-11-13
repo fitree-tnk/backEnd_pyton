@@ -2,7 +2,7 @@ import test01
 
 while True:
     print('\nโปรแกรมที่ต้องการใช้')
-    print("1 = %3 , 2 = รวมค่า")
+    print("1 = %3 , 2 = รวมค่าบวก ลบ , 0 = ออกจากโปรแกรม")
     a = int(input('เลือก : '))
     if a == 1:
         while True:
@@ -27,5 +27,9 @@ while True:
                 print(f'ผลรวมของค่าลบ = {c}')
                 break
             b,c = test01.sum(a,b,c)
-            print(b,c)
-    
+            print(f'ผลบวก = {b} , ผลลบ = {c}')
+    elif a == 0 :
+        print('คุณได้ออกจากระบบแล้ว tank you')
+        break
+    else :
+        print('ป้อนตัวเลขให้ถูกต้อง')
