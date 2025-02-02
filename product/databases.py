@@ -5,3 +5,4 @@ mydb = mysqlcon.connect (
     password = "271146",
     database = "shopping"
     )
+print(mydb)
